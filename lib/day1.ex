@@ -17,7 +17,7 @@ defmodule Advent.Day1 do
 
   def loop(arr, i, len, sum, found) do
     j = rem(i+1, len)
-    {:ok, freq} = Enum.fetch(arr, j)
+    freq = Enum.fetch!(arr, j)
     new_freq = freq + sum
 
     cond do
