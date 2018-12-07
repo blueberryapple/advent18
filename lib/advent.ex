@@ -1,6 +1,6 @@
 defmodule Advent do
-  def readInput(filename) do
-    {:ok, inputString} = File.read(filename)
-    inputString
+  def read_input(filename) do
+    {:ok, input_string} = File.read(filename)
+    input_string
   end
 end

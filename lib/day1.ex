@@ -1,7 +1,7 @@
 defmodule Advent.Day1 do
-  def readInput(filename) do
-    inputString = Advent.readInput(filename)
-    input = String.split(inputString, "\n", trim: true)
+  def read_input(filename) do
+    input_string = Advent.read_input(filename)
+    input = String.split(input_string, "\n", trim: true)
 
     Enum.map(input, &String.to_integer/1)
   end
@@ -10,19 +10,19 @@ defmodule Advent.Day1 do
     Enum.sum(input)
   end
 
-  def solvePart1() do
-    input = readInput("inputs/day1")
+  def solve_part1() do
+    input = read_input("inputs/day1")
     part1(input)
   end
 
   def loop(arr, i, len, sum, found) do
     j = rem(i+1, len)
     {:ok, freq} = Enum.fetch(arr, j)
-    newFreq = freq + sum
+    new_freq = freq + sum
 
     cond do
-      newFreq in found -> newFreq
-      true -> loop(arr, j, len, newFreq, MapSet.put(found, newFreq))
+      new_freq in found -> new_freq
+      true -> loop(arr, j, len, new_freq, MapSet.put(found, new_freq))
     end
   end
 
@@ -31,8 +31,8 @@ defmodule Advent.Day1 do
     loop(input, -1, len, 0, MapSet.new([0]))
   end
 
-  def solvePart2() do
-    input = readInput("inputs/day1")
+  def solve_part2() do
+    input = read_input("inputs/day1")
     part2(input)
   end
 end
