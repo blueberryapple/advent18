@@ -3,7 +3,7 @@ defmodule Day1Test do
   doctest Advent.Day1
 
   test "reads file properly" do
-    assert Advent.Day1.readInput("inputs/day1-test") == [+1, -2, +1]
+    assert Advent.Day1.read_input("inputs/day1-test") == [+1, -2, +1]
   end
 
   test "sums list correctly" do
