@@ -2,7 +2,7 @@ defmodule AdventTest do
   use ExUnit.Case
   doctest Advent
 
-  test "greets the world" do
-    assert Advent.hello() == :world
+  test "reads file correctly" do
+    assert Advent.readInput("inputs/day1-test") == "+1\n-2\n+1\n"
   end
 end
