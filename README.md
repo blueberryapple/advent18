@@ -1,21 +1,8 @@
 # Advent
 
-**TODO: Add description**
+My solutions to https://adventofcode.com/2018
 
-## Installation
+## Usage
+You can enter the repl using `iex -S mix` and run my solutions individually like `Advent.Day1.solvePart1`
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `advent` to your list of dependencies in `mix.exs`:
-
-```elixir
-def deps do
-  [
-    {:advent, "~> 0.1.0"}
-  ]
-end
-```
-
-Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
-and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
-be found at [https://hexdocs.pm/advent](https://hexdocs.pm/advent).
-
+Tests can be run using `mix test`
